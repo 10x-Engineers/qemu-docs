@@ -16,7 +16,7 @@ The primary goal of this repository is to bridge the gap between development on 
 
 The training is divided into two distinct phases, progressing from application-level logic to system-level integration.
 
-### [Phase 1: User Mode Emulation](./01_User_Mode)
+### [Phase 1: User Mode Emulation](./user-mode/README.md)
 **Focus:** Application Logic, Toolchains, and Libraries.
 
 In this phase, the focus is on `qemu-riscv64`. This mode emulates a single process, translating RISC-V instructions to host instructions in real-time. It is the preferred method for compiling code, running scripts, and executing unit tests due to its speed and direct access to host resources.
@@ -27,7 +27,7 @@ In this phase, the focus is on `qemu-riscv64`. This mode emulates a single proce
 *   The importance of the Sysroot (`-L` flag).
 *   Static vs. Dynamic linking mechanisms.
 
-### [Phase 2: System Mode Emulation](./02_System_Mode)
+### [Phase 2: System Mode Emulation](./system-mode/README.md)
 **Focus:** Operating Systems, Networking, and Virtual Hardware.
 
 In this phase, the focus shifts to `qemu-system-riscv64`. This mode emulates a complete motherboard, including the CPU, RAM, MMU, and peripheral devices. It is required for kernel development, driver testing, and validating boot sequences.
