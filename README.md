@@ -89,7 +89,7 @@ A "toolchain" is a set of tools (compiler, linker, libraries) that allows you to
         ./add
     ```
 
-**✅ Deliverable:** A screenshot showing the output `sum = 8`.
+**Deliverable:** A screenshot showing the output `sum = 8`.
 
 ---
 
@@ -101,7 +101,7 @@ A "toolchain" is a set of tools (compiler, linker, libraries) that allows you to
 2.  **Remove** the entire `-L <path/to/sysroot>` flag.
 3.  Run the command again. Observe the error.
 
-**❓ Questions for the Trainee:**
+**Questions:**
 1.  What error message did you see?
 2.  Even though the `add` binary exists, why does QEMU fail to run it?
 
@@ -120,6 +120,6 @@ A "toolchain" is a set of tools (compiler, linker, libraries) that allows you to
     ./qemu/build/qemu-riscv64 -cpu rv64 ./add_static
     ```
 
-**❓ Questions for the Trainee:**
+**Questions**
 1.  Why does `add_static` run successfully without the `-L` flag, while `add` failed?
 2.  Check the file sizes of `add` and `add_static`. Which one is larger, and why?
