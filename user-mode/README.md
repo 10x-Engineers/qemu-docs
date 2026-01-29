@@ -1,4 +1,4 @@
-# QEMU & RISC-V
+# QEMU User Mode
 This repository contains a series of hands-on training tasks designed to get you up and running with QEMU for RISC-V development.
 
 ## Table of Contents
