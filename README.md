@@ -37,3 +37,14 @@ In this phase, the focus shifts to `qemu-system-riscv64`. This mode emulates a c
 *   Configuring User-Mode Networking (Slirp).
 *   Booting a full Linux distribution (Ubuntu Server).
 *   Managing virtual disk images and partitioning.
+
+### [Phase 3: Custom Instruction Implementation](./03_Custom_ISA)
+**Focus:** QEMU Internals, Instruction Set Architecture (ISA) Extension,.
+
+This advanced phase involves modifying the QEMU source code to implement a new, non-standard instruction. This task explores the entire instruction pipeline from binary decoding to execution via the TCG helper system.
+
+**Topics Covered:**
+*   Instruction format encoding.
+*   QEMU's TCG Helper architecture (`DEF_HELPER_FLAGS`).
+*   Creating a C-code execution backend for complex instructions.
+*   Bypassing the assembler for testing using the `.insn` directive.
