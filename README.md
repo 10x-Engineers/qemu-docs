@@ -1,16 +1,13 @@
 # RISC-V Emulation & Cross-Development Training
 
+## Introduction
+
 This repository serves as a guide and reference architecture for working with the RISC-V architecture using QEMU. It is designed to familiarize engineers with the toolchains, emulation modes, and workflows required for embedded development and high-performance computing on RISC-V platforms.
 
-## Repository Intent
-
-The primary goal of this repository is to bridge the gap between development on x86 host machines and deployment on RISC-V targets. By completing these modules, engineers will transition from running simple cross-compiled binaries to managing full system-mode emulated environments.
-
 **Key Learning Outcomes:**
-*   **Cross-Compilation:** Understanding how to build software on x86_64 for execution on RISC-V 64-bit (`riscv64`).
+*   **Cross-Compilation:** Building software on x86_64 for execution on RISC-V 64-bit (`riscv64`).
 *   **Emulation Architectures:** Distinguishing between Application Level (User Mode) and Full System Level (System Mode) emulation.
-*   **Systems Engineering:** Managing Sysroots, dynamic linking, bootloaders (U-Boot), and kernel interactions.
-*   **Debugging:** analyzing instruction sets, memory maps, and boot processes without physical hardware.
+*   **Custom Instruction:** Understanding and implementing custom instructions within the QEMU translation engine.
 
 ## Repository Structure
 
@@ -41,7 +38,7 @@ In this phase, the focus shifts to `qemu-system-riscv64`. This mode emulates a c
 ### [Phase 3: Custom Instruction Implementation](./custom-instruction/README.md)
 **Focus:** QEMU Internals, Instruction Set Architecture (ISA) Extension,.
 
-This advanced phase involves modifying the QEMU source code to implement a new, non-standard instruction. This task explores the entire instruction pipeline from binary decoding to execution via the TCG helper system.
+This phase involves modifying the QEMU source code to implement a new, non-standard instruction. This task explores the entire instruction pipeline from binary decoding to execution via the TCG helper system.
 
 **Topics Covered:**
 *   Instruction format encoding.
