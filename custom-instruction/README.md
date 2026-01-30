@@ -13,7 +13,7 @@
 
 ### Task 1.1: The Custom Function
 
-The most complex logic (the factorial loop) must be implemented in standard C code. This function will be called by QEMU's TCG.
+The factorial loop must be implemented in standard C code. This function will be called by QEMU's TCG.
 
 1.  **Define the Helper:** Locate the correct header file and declare a TCG Helper named **`factorial`** that takes one `target_long` argument and returns one `target_long` value.
 2.  **Implement the Logic:** In the appropriate file (`op_helper.c`), write the C function that performs the factorial calculation.
